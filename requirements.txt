@@ -3,8 +3,4 @@ streamlit_option_menu==0.3.13
 streamlit_extras
 google.generativeai
 PyPDF2
-langchain.text_splitter
-langchain_google_genai
-langchain.vectorstores
-langchain.chains.question_answering
-langchain.prompts
+langchain
