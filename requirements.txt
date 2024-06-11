@@ -1,8 +1,9 @@
-streamlit
+streamlit==1.35.0
 streamlit_option_menu
 streamlit_extras
 google.generativeai
 PyPDF2
 langchain
+faiss
 langchain_google_genai
-langchain.vectorstores import FAISS
+
