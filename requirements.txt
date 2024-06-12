@@ -4,7 +4,7 @@ streamlit_extras
 google.generativeai
 PyPDF2
 langchain
-langchain_google_genai
+langchain-google-genai
 langchain_community
 faiss-cpu
 embeddings
