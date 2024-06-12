@@ -5,6 +5,7 @@ google.generativeai
 PyPDF2
 langchain
 langchain-google-genai
+langchain_google_genai
 langchain_community
 faiss-cpu
 embeddings
