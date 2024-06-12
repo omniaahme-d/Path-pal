@@ -1,12 +1,12 @@
 streamlit
-streamlit_option_menu
-streamlit_extras
+streamlit-option-menu
+streamlit-extras
 google-generativeai
 PyPDF2
 langchain
 langchain-google-genai
 gigachain-google-genai
-langchain_community
+langchain-community
 faiss-cpu
 embeddings
 pdfreader
