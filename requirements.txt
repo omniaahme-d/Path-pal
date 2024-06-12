@@ -1,3 +1,4 @@
+Python==3.7
 streamlit
 streamlit_option_menu
 streamlit_extras
@@ -7,3 +8,4 @@ langchain
 langchain_google_genai
 faiss-cpu
 faiss-gpu
+FAISS
