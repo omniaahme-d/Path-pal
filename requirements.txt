@@ -6,5 +6,3 @@ PyPDF2
 langchain
 faiss  # Use this if you can't install faiss-gpu
 langchain_google_genai
-faiss-gpu
-faiss-cpu
