@@ -7,4 +7,3 @@ langchain
 langchain_google_genai
 langchain_community
 faiss-cpu
-faiss-gpu
