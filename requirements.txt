@@ -1,4 +1,4 @@
-Python==3.7
+Python
 streamlit
 streamlit_option_menu
 streamlit_extras
