@@ -4,7 +4,7 @@ from streamlit_extras.stylable_container import stylable_container
 
 from util.pdf import showPDF
 from util.text import showText
-from util.chat import showCHAT
+#from util.chat import showCHAT
 from util.roadmap import showROADMAP
 # page title and icon
 st.set_page_config(page_title="PathPal", page_icon='🤖')
