@@ -11,3 +11,4 @@ faiss-cpu
 embeddings
 pdfreader
 firebase_admin
+pyrebase
