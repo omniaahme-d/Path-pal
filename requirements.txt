@@ -8,4 +8,4 @@ langchain-community
 faiss-cpu
 pdfreader
 firebase_admin
-langchain_google_genai
+langchain-google-genai
