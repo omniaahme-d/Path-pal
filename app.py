@@ -87,10 +87,9 @@ def Home():
     # Roadmap
     elif selected == "Roadmap":
         showROADMAP()
-
-
-# Sign-up page
+        
 def sign_up():
+    db = firestore.client()
     st.subheader('Sign Up')
     email = st.text_input('Email')
     password1 = st.text_input('Password', type='password')
@@ -104,9 +103,25 @@ def sign_up():
         elif password1 != password2:
             st.error('Passwords do not match!')
         else:
-            # Store user info in session
-            st.session_state.user_email = email
-            st.success('Account created successfully!')
+            try:
+                # Create a new user in Firebase Authentication
+                user = auth.create_user(
+                    email=email,
+                    password=password1,
+                )
+                st.success('Account created successfully!')
+
+                # Store user info in session
+                st.session_state.user_email = email
+
+                # Save the new user's email to Firestore
+                doc_ref = db.collection('users').document(user.uid)
+                doc_ref.set({
+                    'email': email,
+                    # Add any other user info you'd like to save
+                })
+            except auth.EmailAlreadyExistsError:
+                st.error('Email already exists!')
 
 # Feedback page# Feedback page
 def feedback():
