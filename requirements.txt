@@ -12,3 +12,4 @@ embeddings
 pdfreader
 firebase_admin
 pyrebase
+Crypto-PublicKey
