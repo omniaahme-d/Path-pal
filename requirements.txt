@@ -11,5 +11,6 @@ faiss-cpu
 embeddings
 pdfreader
 firebase_admin
+oauth2client
 pyrebase
 Crypto
