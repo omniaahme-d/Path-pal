@@ -12,3 +12,11 @@ embeddings
 pdfreader
 firebase_admin
 langchain_google_genai
+streamlit
+google-generativeai
+python-dotenv
+langchain
+PyPDF2
+chromadb
+faiss-cpu
+langchain_google_genai
