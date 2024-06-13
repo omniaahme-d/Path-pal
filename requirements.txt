@@ -10,3 +10,4 @@ langchain-community
 faiss-cpu
 embeddings
 pdfreader
+pyrebase
