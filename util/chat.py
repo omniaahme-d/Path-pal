@@ -45,17 +45,10 @@ def get_text_chunks(text):
     return chunks
 
 
-from langchain_google_genai import GoogleGenerativeAIError  # Assuming it's from this library
-
 def get_vector_store(text_chunks):
-  try:
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=GOOGLE_API_KEY)
-    vector_store = FAISS.from_texts(text_chunks, embedding=embeddings)
-    vector_store.save_local("faiss_index")
-  except GoogleGenerativeAIError as e:
-    # Handle timeout or other GoogleGenerativeAIError exceptions here
-    st.error("An error occurred during text processing. Please try uploading smaller PDFs.")
-    pass  # Do nothing if there's an error (replace with your desired handling)
+  embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=GOOGLE_API_KEY)
+  vector_store = FAISS.from_texts(text_chunks, embedding=embeddings)
+  vector_store.save_local("faiss_index")
 
 
 def get_conversational_chain():
