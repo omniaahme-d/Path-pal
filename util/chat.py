@@ -45,6 +45,8 @@ def get_text_chunks(text):
     return chunks
 
 
+from langchain_google_genai import GoogleGenerativeAIError  # Assuming it's from this library
+
 def get_vector_store(text_chunks):
   try:
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=GOOGLE_API_KEY)
@@ -52,7 +54,6 @@ def get_vector_store(text_chunks):
     vector_store.save_local("faiss_index")
   except GoogleGenerativeAIError as e:
     # Handle timeout or other GoogleGenerativeAIError exceptions here
-    # For example, you could split large chunks or display an error message to the user
     st.error("An error occurred during text processing. Please try uploading smaller PDFs.")
     pass  # Do nothing if there's an error (replace with your desired handling)
 
