@@ -12,4 +12,3 @@ embeddings
 pdfreader
 firebase_admin
 re
-pyrebase
