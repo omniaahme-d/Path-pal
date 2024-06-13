@@ -13,4 +13,4 @@ pdfreader
 firebase_admin
 oauth2client
 pyrebase
-Crypto
+pyjwt[Crypto]
