@@ -9,4 +9,3 @@ faiss-cpu
 pdfreader
 firebase_admin
 langchain-google-genai
-langchainhub
