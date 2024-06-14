@@ -50,9 +50,6 @@ fastjsonschema==2.19.1
 favicon==0.7.0
 filelock==3.13.1
 firebase-admin==6.5.0
-Flask==2.2.2
-Flask-BasicAuth==0.2.0
-Flask-Cors==3.0.10
 flatbuffers==24.3.25
 fonttools==4.50.0
 frozenlist==1.4.0
