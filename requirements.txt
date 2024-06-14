@@ -68,3 +68,4 @@ streamlit-keyup==0.2.3
 streamlit-option-menu==0.3.12
 streamlit-toggle-switch==1.0.2
 streamlit-vertical-slider==2.5.5
+loknhuob
