@@ -116,7 +116,6 @@ langchain-google-genai==1.0.3
 langchain-text-splitters==0.0.1
 langsmith==0.1.53
 locust==2.11.0
-logging==0.4.9.6
 lxml==5.1.0
 Markdown==3.6
 markdown-it-py==3.0.0
