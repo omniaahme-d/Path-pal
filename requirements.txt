@@ -198,7 +198,6 @@ pyreadline3==3.4.1
 Pyrebase4==4.8.0
 python-dateutil==2.8.2
 python-dotenv==1.0.1
-python-jwt==4.1.0
 pywin32==304
 PyYAML==6.0.1
 pyzmq==26.0.2
