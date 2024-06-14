@@ -5,8 +5,9 @@ google-generativeai
 PyPDF2
 langchain
 langchain-community
-faiss-cpu
+tiktoken
 pdfreader
 firebase_admin
 langchain-google-genai
 langchain-core
+faiss-cpu
