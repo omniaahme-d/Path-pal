@@ -26,18 +26,20 @@ def showROADMAP():
     st.title("Computer Science Roadmap Recommendation System")
 
     # Collect user input (current knowledge level, interests, goals)
-    interests = st.text_input("The field you Interested in:")
-    current_knowledge = st.text_input("Current knowledge level:")
-    goals = st.text_input("Your goals in the future:")
+    interests = st.selectbox("How would you like to be contacted?", ("Data Science", "AI", "Android Development","Cyber Security", "Other"))
+    if interests=="Other":
+        user_input = st.text_input("Enter your interests:")
+        interests = user_input
+    #current_knowledge = st.text_input("Current knowledge level:")
+    #goals = st.text_input("Your goals in the future:")
 
     # Check if any required field is empty
-    if not current_knowledge.strip() or not interests.strip() or not goals.strip():
+    if  not interests.strip():
         st.warning("Please fill in all required fields.")
         return
 
     # Generate recommendation prompt based on user input
-    input_text = f"I am interested in {interests}. My current knowledge level is {current_knowledge}. " \
-                 f"My goals are {goals}. " \
+    input_text = f"I am interested in {interests}."\
                  f"Based on this, can you recommend a roadmap for me?"  \
                  f"Please make sure to be strict with your answer and tell me EXACTLY what should i learn " \
                  f"give me the steps of the roadmap in Summary " \
@@ -70,7 +72,7 @@ def showROADMAP():
             st.markdown(recommendations)            
         elif interests.lower() in ['cyber security', 'cybersecurity','cyber','security','hacking','hacker']:
             st.subheader("This is a preset roadmap by PathPal developer team: ")
-            image_path = os.path.join(image_folder, 'cyber security.png')
+            image_path = os.path.join(image_folder, 'cyber_security.png')
             st.image(image_path, caption='cyber security Roadmap', use_column_width=True)
             recommendations = generate_recommendations(input_text)
             # Output recommendations in a friendly format
