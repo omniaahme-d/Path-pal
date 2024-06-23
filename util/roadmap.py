@@ -26,7 +26,7 @@ def showROADMAP():
     st.title("Computer Science Roadmap Recommendation System")
 
     # Collect user input (current knowledge level, interests, goals)
-    interests = st.selectbox("Enter your interests:", ("Data Science", "AI", "Android Development","Cyber Security", "Other"))
+    interests = st.selectbox("Choose your interests:", ("Data Science", "AI", "Android Development","Cyber Security", "Other"))
     if interests=="Other":
         user_input = st.text_input("Enter your interests:")
         interests = user_input
