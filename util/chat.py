@@ -92,10 +92,11 @@ def user_input(user_question):
 def showCHAT():
     st.header("Chat with PDF")
 
-    user_question = st.text_input("Ask a Question from the PDF Files")
+    user_question = st.chat_input("Ask a Question from the PDF Files")
 
     if user_question:
         user_input(user_question)
+        st.write(f"User has sent the following prompt: {user_question}")
 
     with st.sidebar:
         st.title("Menu:")
